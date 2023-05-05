@@ -1,6 +1,6 @@
 # Agrculture_Image_Segmentation
 
-This repository holds an attempt perform image segmentation task on the Agriculture Vision challenge. This challenge combines technique using Computer Vision, Data Science and AI/ML. https://www.agriculture-vision.com/agriculture-vision-2023
+This repository holds an attempt to perform image segmentation task on the Agriculture Vision challenge. This challenge combines technique using Computer Vision, Data Science and AI/ML. https://www.agriculture-vision.com/agriculture-vision-2023
 
 ## Overview
 The task is to use the dataset which are some aerial farmland images to train a model to predict field anomalies on new images. Given a new input from the test set our task is to predict what class does each pixel belong to (one of the six anomalies or the background).​The six anomalies are: Cloud shadow, Double plant, Planter skip, Standing Water, Waterway and Weed cluster. 
@@ -75,7 +75,8 @@ Unet is a CNN architecture originally designed for use of image segmentation in 
  * We noticed that the models kept predicting the entire mask as 0 which is the background pixel. Which was giving the model an accuracy of about 70%. To solve this we tried messing around with the weights of the classes in order to make 0 less important in the loss function. However, this proved to be very volatile as even just slightly changing the weights of things would cause something else to take over the picture.​
  * Our results are not ideal nor usable in their current state since we were not able to get very good results with the models. ​
  * The model predict 0 for most of the picture but something else parts of the image changing the weights for 0 caused it to completely not predict it at all.​
- * This led to our model to have an accuracy of about 7% for DeepLab,  
+ * This led to our model to have an accuracy of about 7% for DeepLab
+
 ### Citations
 * https://github.com/SHI-Labs/Agriculture-Vision
 * https://keras.io/examples/vision/deeplabv3_plus/
