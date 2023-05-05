@@ -37,4 +37,26 @@ The task is to use the dataset which are some aerial farmland images to train a 
     * UNet + VGG
 
 
-### 
+### Problem Formulation
+
+  * Input: image data, masks data convert into list of arrays
+  * Models used: 
+    * Deep Lab
+    * UNet
+    * UNet + fastai
+    * UNet + VGG
+
+### Model
+  * DeepLab
+ ![image](https://user-images.githubusercontent.com/89665013/236551019-ad66839e-55b8-4f09-b04d-042a305d683a.png)
+ ![image](https://user-images.githubusercontent.com/89665013/236551126-23bda62c-97e0-4bb9-9bcc-5d6a14205bd0.png)
+ ![image](https://user-images.githubusercontent.com/89665013/236551238-f4571b03-59fd-4b7c-b796-9a19303d9b5b.png)
+
+
+
+
+### Performance Comparison
+
+* The metric is Mean Intersection-over-Union (mIoU)):
+![image](https://user-images.githubusercontent.com/89665013/236550741-2bd5505f-1f35-4b41-9ef3-1e9377097ebd.png)
+![image](https://user-images.githubusercontent.com/89665013/236550787-05da44d1-a6d9-4428-87d9-91f850ee3491.png)
