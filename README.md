@@ -20,6 +20,9 @@ The task is to use the dataset which are some aerial farmland images to train a 
 * Masks data
 * Preprocessing involved going through each of the labels and combining all the masks together with each pixel referencing a different label.
 * After combining the masks together, the next step was to associate each mask with the appropriate image.
+![image](https://user-images.githubusercontent.com/98187543/236552184-1949db0e-deaf-430e-b485-67d557d8921a.png)
+
+ #### Data Visualization
   * Example:
   
 ![image](https://user-images.githubusercontent.com/98187543/236550315-ff3f7465-7d15-4715-a3b5-7e7b56aceb8c.png)
@@ -28,26 +31,27 @@ The task is to use the dataset which are some aerial farmland images to train a 
 
 ### Problem Formulation
 
-  * Input: Overhead image of plots of lands
+  * Input: Overhead image of plots of lands. Image data, masks data convert into list of arrays
   * Output: Mask of plots of land
   * Models used: 
     * Deep Lab
     * UNet
     * UNet + fastai
     * UNet + VGG
+* Deep Lab:
 
 
-### Problem Formulation
+* UNet:
 
-  * Input: image data, masks data convert into list of arrays
-  * Models used: 
-    * Deep Lab
-    * UNet
-    * UNet + fastai
-    * UNet + VGG
+Unet is a CNN architecture originally designed for use of image segmentation utilizing medical scans. It consists of encoding and decoding layers. The econding layers reduce the size of the image while to decoding layers follow the same typical architecture of a CNN.
 
-### Model
+![image](https://user-images.githubusercontent.com/98187543/236554037-9534a58a-bf52-48c6-9f4d-1480512218bf.png)
+
+
+### Model Results
+
   * DeepLab
+
  ![image](https://user-images.githubusercontent.com/89665013/236551019-ad66839e-55b8-4f09-b04d-042a305d683a.png)
  ![image](https://user-images.githubusercontent.com/89665013/236551126-23bda62c-97e0-4bb9-9bcc-5d6a14205bd0.png)
  ![image](https://user-images.githubusercontent.com/89665013/236551238-f4571b03-59fd-4b7c-b796-9a19303d9b5b.png)
