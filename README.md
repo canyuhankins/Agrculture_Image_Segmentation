@@ -78,3 +78,6 @@ Unet is a CNN architecture originally designed for use of image segmentation uti
  * This led to our model to have an accuracy of about 7% for DeepLab,  
 ### Citations
 * https://keras.io/examples/vision/deeplabv3_plus/
+* https://github.com/bnsreenu/python_for_microscopists
+* https://github.com/qubvel/segmentation_models
+
