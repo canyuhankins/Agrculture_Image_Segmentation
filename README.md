@@ -33,6 +33,12 @@ The task is to use the dataset which are some aerial farmland images to train a 
 
   * Input: Overhead image of plots of lands. Image data, masks data convert into list of arrays
   * Output: Mask of plots of land
+  * The metric is Mean Intersection-over-Union (mIoU)):
+
+![image](https://user-images.githubusercontent.com/89665013/236550741-2bd5505f-1f35-4b41-9ef3-1e9377097ebd.png)
+
+![image](https://user-images.githubusercontent.com/89665013/236550787-05da44d1-a6d9-4428-87d9-91f850ee3491.png)
+
   * Models used: 
     * Deep Lab
     * UNet
@@ -62,11 +68,9 @@ Unet is a CNN architecture originally designed for use of image segmentation uti
 ![image](https://user-images.githubusercontent.com/98187543/236555114-1ff23906-f3ec-4810-806a-f8b605d1a7ff.png)
 
 
-
-
-
-### Performance Comparison
-
-* The metric is Mean Intersection-over-Union (mIoU)):
-![image](https://user-images.githubusercontent.com/89665013/236550741-2bd5505f-1f35-4b41-9ef3-1e9377097ebd.png)
-![image](https://user-images.githubusercontent.com/89665013/236550787-05da44d1-a6d9-4428-87d9-91f850ee3491.png)
+### Conclusion
+ * The image preprocessing took most of our time. ​
+ * We noticed that the models kept predicting the entire mask as 0 which is the background pixel. Which was giving the model an accuracy of about 70%. To solve this we tried messing around with the weights of the classes in order to make 0 less important in the loss function. However, this proved to be very volatile as even just slightly changing the weights of things would cause something else to take over the picture.​
+ * Our results are not ideal nor usable in their current state since we were not able to get very good results with the models. ​
+ * The model predict 0 for most of the picture but something else parts of the image changing the weights for 0 caused it to completely not predict it at all.​
+ * This led to our model to have an accuracy of about 7% for DeepLab,  
