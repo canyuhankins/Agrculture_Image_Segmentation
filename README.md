@@ -44,7 +44,9 @@ The task is to use the dataset which are some aerial farmland images to train a 
     * UNet
     * UNet + fastai
     * UNet + VGG
-* Deep Lab: This is a CNN model that was developed by a team of researchers at google and is able to take in different pre-trained neural-network architectures such as Imagenet and ResNet. It specializes in scanning each pixels and being able to pick out precise features from those pixels.
+* Deep Lab:
+
+This is a CNN model that was developed by a team of researchers at google and is able to take in different pre-trained neural-network architectures such as Imagenet and ResNet. It specializes in scanning each pixels and being able to pick out precise features from those pixels.
 
 
 * UNet:
