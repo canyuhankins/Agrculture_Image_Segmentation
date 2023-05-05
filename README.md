@@ -51,7 +51,7 @@ This is a CNN model that was developed by a team of researchers at google and is
 
 * UNet:
 
-Unet is a CNN architecture originally designed for use of image segmentation in biomedical images. It consists of encoding and decoding layers. The econding layers reduce the size of the image while to decoding layers follow the same typical architecture of a CNN.
+Unet is a CNN architecture originally designed for use of image segmentation in biomedical images. It consists of encoding, decoding layers skip connections and a bridge.
 
 ![image](https://user-images.githubusercontent.com/98187543/236554037-9534a58a-bf52-48c6-9f4d-1480512218bf.png)
 
