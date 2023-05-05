@@ -61,6 +61,8 @@ Unet is a CNN architecture originally designed for use of image segmentation uti
 
 ![image](https://user-images.githubusercontent.com/98187543/236554943-5f1531cb-ba17-477f-89dc-a5e593fb154b.png)
 ![image](https://user-images.githubusercontent.com/98187543/236555114-1ff23906-f3ec-4810-806a-f8b605d1a7ff.png)
+![image](https://user-images.githubusercontent.com/98187543/236555506-238b4e2d-2ef0-4e8e-b559-5d559d93c719.png)
+
 
 
 
