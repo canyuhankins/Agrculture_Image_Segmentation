@@ -18,13 +18,23 @@ The task is to use the dataset which are some aerial farmland images to train a 
 
 * Dealing with image data
 * Masks data
+* Preprocessing involved going through each of the labels and combining all the masks together with each pixel referencing a different label.
+* After combining the masks together, the next step was to associate each mask with the appropriate image.
+  * Example:
+  
+![image](https://user-images.githubusercontent.com/98187543/236550315-ff3f7465-7d15-4715-a3b5-7e7b56aceb8c.png)
+![image](https://user-images.githubusercontent.com/98187543/236550391-856061a0-ce5a-4eec-a998-91abd9f7550c.png)
+
 
 ### Problem Formulation
 
-  * Input: ?
-  * Output: ?
+  * Input: Overhead image of plots of lands
+  * Output: Mask of plots of land
   * Models used: 
     * Deep Lab
     * UNet
     * UNet + fastai
     * UNet + VGG
+
+
+### 
